@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0F172A;
+  --color-navy-dark: #020617;
+  --color-navy-light: #1E293B;
+  --color-purple: #8B5CF6;
+  --color-purple-dark: #6D28D9;
+  --color-purple-light: #A78BFA;
+  --color-red: #EF4444;
+  --color-yellow: #EAB308;
+  --color-green: #10B981;
+  --color-text-primary: #F8FAFC;
+  --color-text-muted: #CBD5E1;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-navy);
+    color: var(--color-text-primary);
+  }
+}
