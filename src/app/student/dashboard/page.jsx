@@ -16,7 +16,7 @@ export default function StudentDashboard() {
         const token = Cookies.get('token');
         // Let's assume the student's profile dictates what they see. Just fetching all here or filtering
         // For right now, grab all available generated lessons.
-        const res = await fetch('https://backend-three-jet-87.vercel.ap/api/lessons/student-lessons', {
+        const res = await fetch('https://backend-three-jet-87.vercel.app/api/lessons/student-lessons', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
