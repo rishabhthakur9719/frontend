@@ -17,7 +17,7 @@ export default function TeacherDashboard() {
   const fetchLessons = async () => {
     try {
       const token = Cookies.get('token');
-      const res = await fetch('http://localhost:5000/api/lessons/teacher-lessons', {
+      const res = await fetch('https://backend-three-jet-87.vercel.app/api/lessons/teacher-lessons', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await res.json();
@@ -43,7 +43,7 @@ export default function TeacherDashboard() {
       // Retrieve the JWT from cookies set by AuthContext
       const token = Cookies.get('token'); 
       
-      const response = await fetch('http://localhost:5000/api/lessons/generate-lesson', {
+      const response = await fetch('https://backend-three-jet-87.vercel.app/api/lessons/generate-lesson', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ export default function TeacherDashboard() {
     
     try {
       const token = Cookies.get('token');
-      const res = await fetch(`http://localhost:5000/api/lessons/${id}`, {
+      const res = await fetch(`https://backend-three-jet-87.vercel.app/api/lessons/${id}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${token}` }
       });
