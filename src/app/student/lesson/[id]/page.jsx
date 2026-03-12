@@ -19,7 +19,7 @@ export default function LessonView() {
     const fetchLesson = async () => {
       try {
         const token = Cookies.get('token');
-        const res = await fetch(`https://backend-three-jet-87.vercel.app/api/lessons/${params.id}`, {
+        const res = await fetch(`https://backend-three-jet-87.vercel.ap/api/lessons/${params.id}`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
